@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(52,152,219);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(22,92,159);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="40" fill="url(#grad1)" />
+  <text x="50" y="60" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">ARQ</text>
+  <style>
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    circle {
+      animation: pulse 3s infinite ease-in-out;
+    }
+  </style>
+</svg>
